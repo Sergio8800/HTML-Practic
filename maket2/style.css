@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'gilroy-semibold';
+    src: url('./fonts/gilroy-semibold.ttf');
+    font-family: 'gilroy-medium';
+    src: url('./fonts/gilroy-medium.ttf');
+    font-family: 'gilroy-it';
+    src: url('./fonts/gilroy-semibolditalic.woff2');
+}
+
+.main_container {
+    width: 1920px;
+    height: 700px;
+    flex-shrink: 0;
+    background-color: #FFF;
+}
+
+.link_menu {
+    color: #000;
+    font-family: 'gilroy-medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text_button {
+    color: #000;
+    font-family: 'gilroy-it';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text_under {
+    color: #888;
+    font-family: 'gilroy-medium';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button_start {
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button_play {
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    color: #aaa;
+}
+
+.footer {
+    width: 1920px;
+    height: 243px;
+    flex-shrink: 0;
+
+}
+
+.footer>li {
+    width: 160px;
+    height: 50px;
+    flex-shrink: 0;
+}
