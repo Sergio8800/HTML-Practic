@@ -7,23 +7,65 @@
     src: url('./fonts/gilroy-semibolditalic.woff2');
 }
 
-.main_container {
-    width: 1920px;
-    height: 700px;
-    flex-shrink: 0;
-    background-color: #FFF;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+/* формула центрирования контента по половине сетки, вместо див блока, который ниже закоментирован 
+Дальше каждый блок котрый нужен центрировать - добовляем этот класс*/
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    ;
+}
+
+/* .main_container {
+    width: 1920px;
+    height: 700px;
+    margin: 0 auto;
+    flex-shrink: 0;
+    background-color: #FFF;
+} */
+
 .link_menu {
+    /* width: 1170px; */
     color: #000;
     font-family: 'gilroy-medium';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: flex;
+    /* gap: 32px; */
+    justify-content: space-between;
+}
+
+.flex_start_end {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    gap: 41px;
+}
+
+.position_flex {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+
+.button_centre {
+    Width: 543px;
+    Height: 374px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .text_button {
+    width: 522px;
+    height: 222px;
     color: #000;
     font-family: 'gilroy-it';
     font-size: 60px;
@@ -39,6 +81,19 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-bottom: 22px;
+}
+
+.button_header {
+    margin: 0;
+    padding: 0;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .button_start {
@@ -46,7 +101,7 @@
     height: 50px;
     border-radius: 50px;
     background: #F25822;
-    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    box-shadow: 4px 4px 8px 0px rgba(20, 13, 11, 0.2);
     color: #FFF;
     font-family: Gilroy-Bold;
     font-size: 15px;
@@ -54,6 +109,16 @@
     font-weight: 400;
     line-height: normal;
 }
+.pictures_center{
+    width: 544.814px;
+height: 374.843px;
+
+}
+.flex_centre_element{
+    display: grid;
+    width: 1170px;
+}
+
 
 .button_play {
     width: 140px;
@@ -65,12 +130,70 @@
 .footer {
     width: 1920px;
     height: 243px;
-    flex-shrink: 0;
-
+    display: flex;
+    align-items:center;
 }
 
 .footer>li {
     width: 160px;
     height: 50px;
     flex-shrink: 0;
+}
+
+.content {
+    /* width: 700px; */
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 128px;
+
+
+}
+
+.item {
+    border: 1px solid #000;
+    min-height: 200px;
+}
+
+.item1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.position {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    position: relative;
+}
+
+.posistion-col {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+}
+
+.elem1 {
+    background-color: red;
+    top: 0px;
+    left: 0px;
+}
+
+.elem2 {
+    background-color: rgb(24, 226, 47);
+    top: 75px;
+    left: 75px;
+    z-index: 4;
+}
+
+.elem3 {
+    background-color: rgb(95, 21, 160);
+    top: 150px;
+    left: 150px;
+}
+
+.elem4 {
+    background-color: rgb(50, 8, 175);
+    top: 225px;
+    left: 225px;
 }
