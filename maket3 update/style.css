@@ -61,15 +61,28 @@
 
 .centr_part {
     width: 1200px;
-    margin: auto;
+    margin: 0;
+     margin-top: 155px;
+     display: flex;
+     justify-content: space-between;
+     gap: 41px;
+}
+.flex_second{
+    display: flex;
+    gap: 41px;
+    align-items: center;
 }
 
-.centr_part .flex_start_end {
-    margin-top: 155px;
-    width: 1170px;
+.flex_start_end {
+   
+    /* width: 1170px; */
     display: flex;
     justify-content: space-between;
     gap: 41px;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
 }
 
 .position_flex {
@@ -80,16 +93,18 @@
 
 
 .button_centre {
-    Width: 543px;
-    Height: 374px;
+    /* Width: 543px;
+    Height: 374px; */
     display: flex;
     flex-wrap: wrap;
-
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 21px;
 }
 
 .text_button {
-    width: 522px;
-    height: 222px;
+    /* width: 522px;
+    height: 222px; */
     color: #000;
     font-family: 'gilroy-it';
     font-size: 60px;
@@ -141,7 +156,7 @@
 }
 
 .flex_centre_element {
-    display: grid;
+    /* display: grid; */
     width: 1170px;
 }
 
@@ -169,19 +184,18 @@
 }
 
 .pictures_center_2 {
-    Width: 543px;
-    Height: 374px;
-    /* Width: 800px;
-    Height: 600px; */
+    width: 100%;
+   
     position: relative;
 }
 
 .pictures_center_2>img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: -200px;
+    left: -200px;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
 }
 
 .centre_3 {
